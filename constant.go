@@ -1,8 +1,8 @@
 package wps
 
 const (
-	// UAField 用户代理
-	UAField = "weboffice-httpclient"
+	// UA WPS UA
+	UA = "weboffice-httpclient"
 
 	// XFileIdField 文件 id
 	XFileIdField = "x-weboffice-file-id"
@@ -21,8 +21,8 @@ const (
 
 // 用户操作权限
 const (
-	Read  = "read"
-	Write = "write"
+	PermissionRead  = "read"
+	PermissionWrite = "write"
 )
 
 // 文件类型
@@ -44,4 +44,9 @@ var (
 const (
 	Off = iota
 	On
+)
+
+// WatermarkText 水印
+const (
+	WatermarkText = 1
 )

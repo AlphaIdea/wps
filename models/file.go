@@ -69,7 +69,7 @@ type File struct {
 	Watermark  *Watermark `json:"watermark,omitempty"`
 }
 
-type GetFileVersion struct {
+type FileVersion struct {
 	File *File `json:"file,omitempty"`
 }
 
@@ -86,11 +86,11 @@ type PostFile struct {
 	File *File `json:"file,omitempty"`
 }
 
-type GetFileHistoryVersions struct {
+type FileHistoryVersions struct {
 	Histories []*FileMetadata `json:"histories,omitempty"`
 }
 
-type GetFileHistoryVersionsRequest struct {
+type FileHistoryVersionsInput struct {
 	Id     string `json:"id,omitempty"`
 	Offset int32  `json:"offset,omitempty"`
 	Count  int32  `json:"count,omitempty"`

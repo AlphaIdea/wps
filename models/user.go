@@ -30,10 +30,10 @@ type UserACL struct {
 	History int32 `json:"history,omitempty"`
 }
 
-type GetUserInfosInput struct {
+type UserInfosInput struct {
 	Ids []string `json:"ids,omitempty"`
 }
 
-type GetUserInfos struct {
+type UserInfos struct {
 	Users []*User `json:"users,omitempty"`
 }
